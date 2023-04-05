@@ -1,0 +1,23 @@
+pipeline
+{
+    agent any
+    stages
+    {
+        stage('declarative build')
+        {
+            steps
+            {
+            git branch: 'main', url: 'https://github.com/nani1203/Demo.git'
+        
+                
+            }
+        }
+        stage('download')
+        {
+            steps
+            {
+                echo 'Build successful'
+            }
+        }
+    }
+}
